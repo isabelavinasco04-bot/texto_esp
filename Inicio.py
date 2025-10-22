@@ -102,5 +102,10 @@ if st.button("🔎 Analizar", type="primary"):
         else:
             st.markdown("### 🔍 No se encontraron coincidencias exactas de palabras clave.")
         
+              
         # 📈 Visualización de similitudes
-        st.markdown("### 📉 Nivel de simili
+        st.markdown("### 📉 Nivel de similitud por documento")
+        plt.barh([f"Doc {i+1}" for i in range(len(documents))], similarities, color="#FF4B4B")
+        plt.xlabel("Similitud")
+        plt.ylabel("Documentos")
+        st.pyplot(plt)
