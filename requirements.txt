@@ -11,6 +11,5 @@ numpy>=1.24.0
 # Procesamiento de lenguaje natural
 nltk>=3.8.1
 
-
-
-
+# Visualización
+matplotlib>=3.8.0
